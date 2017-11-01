@@ -10,7 +10,7 @@ public class FileReader {
      */
     public static void main(String[] args) throws FileNotFoundException {
         try (
-            Scanner input = new Scanner(new File("src/filereader/data.txt"))) {
+            Scanner input = new Scanner(new File("data.txt"))) {
             input.useDelimiter(",");
             
             while(scanner.hasNext()){
