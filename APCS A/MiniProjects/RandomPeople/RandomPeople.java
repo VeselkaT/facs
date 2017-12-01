@@ -4,7 +4,7 @@ import java.util.List;
 public class RandomPeople {
     
 	// Add any necessary instance variables here
-    private static List<String> nameList;
+    private List<String> nameList;
     
     /**
      * Your constructor should initialize any instance variables.
@@ -23,7 +23,7 @@ public class RandomPeople {
      * have been used/returned, return "None" instead.
      * @return String name or "None"
      */
-    public static String getRandomName(){
+    public String getRandomName(){
         if(nameList.size() > 0){
             return nameList.remove((int)(Math.random() * nameList.size()));
         }
